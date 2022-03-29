@@ -1,0 +1,21 @@
+.dashboard{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2vw;
+    &_empty{
+        color: #ff0000;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .dashboard{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 768px) { 
+    .dashboard{
+        grid-template-columns: 1fr;
+    }
+}

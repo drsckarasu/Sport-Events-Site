@@ -1,0 +1,23 @@
+.section{
+  width: 70%;
+  &_inputs{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+}
+
+@media screen and (max-width: 1024px) {
+    .section{
+      width: 100%;
+    } 
+}
+
+@media screen and (max-width: 768px) {
+    .section{
+        &_inputs{
+          flex-direction: column-reverse;
+        }
+    } 
+}

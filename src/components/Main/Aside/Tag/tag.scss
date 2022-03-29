@@ -1,0 +1,17 @@
+.tag{
+    padding: 0.36vw 0.8vw;
+    background-color: #EBEBEB;
+    border: none;
+    border-radius: 3px;
+    color: #171717;
+    font-size: 00.875rem;
+    margin: 0 0.6vw 0.6vw 0;
+    &:hover {
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+    &:focus{
+        background-color: #2379a1;
+        color: #fff;
+    }
+}
