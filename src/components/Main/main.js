@@ -19,16 +19,22 @@ const Main = ({ dashboard }) => {
 
   useEffect(() => {
     if (filterCards && labelTagStatus === 'Sport') {
-      setFilterCards(dashboard.filter(card => card.title.toLowerCase().includes(searchStatus.toLowerCase())));
+      setFilterCards(
+        dashboard.filter(card =>
+          card.title.toLowerCase().includes(searchStatus.toLowerCase())));
     } else {
-      setFilterCards(dashboard.filter(card => card.label === labelTagStatus && card.title.toLowerCase().includes(searchStatus.toLowerCase())));
+      setFilterCards(
+        dashboard.filter(
+          card =>
+            card.label === labelTagStatus &&
+            card.title.toLowerCase().includes(searchStatus.toLowerCase())));
     }
   }, [labelTagStatus, searchStatus, dashboard]);
 
-  useLocationChange((location) => { 
+  useLocationChange(location => {
     console.log('handle route change here', location);
   });
-  
+
   return (
     <div className="main">
       <div className="main_content">
